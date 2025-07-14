@@ -30,7 +30,6 @@
     #
     # The early_packages include updating packages in case newer packages
     # address complications that cause issues with subsequent provisioning.
-    - repos
     - early_packages
 
 - hosts: all
@@ -59,6 +58,7 @@
     # in some environments (those with questionable network behavior) where
     # later reboots have proven problematic.
     - rebooting_tasks
+    - repos
 
   # The storage server must be configured before any other provisioning.
 - hosts: storage_server

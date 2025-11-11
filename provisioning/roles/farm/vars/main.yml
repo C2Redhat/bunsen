@@ -38,6 +38,7 @@ _farm_packages:
     - targetcli
     - valgrind
     - valgrind-devel
+    - vdo-test-tools
     - xfsdump
     - yum-plugin-auto-update-debug-info
 
